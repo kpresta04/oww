@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Baltimore';
+    src: url('BaltimoreBold.woff2') format('woff2'),
+        url('BaltimoreBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

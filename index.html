@@ -1,0 +1,177 @@
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css"/>
+        <link rel="stylesheet" href="assets/w3.css" />
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css"/>
+        <title>OurWarmWelcome</title>
+    </head>
+    <body>
+        
+        <div class="menu">
+				<img src="images/OWW_Identity_lscape_BlackWhite.png" id="logo">
+            <ul>
+              <li class="mmenu"><a href="./index.html" class="active">Home</a></a></li>
+                <li class="mmenu"><a href="./pages/welcome/index.html">Welcome</a></a></li>
+                <li class="mmenu"><a href="./pages/protect/index.html">Protect</a></li>
+                <li class="mmenu"><a href="./pages/promote/index.html">Promote</a></li>
+                <li class="mmenu"><a href="./pages/integrate/index.html">Integrate</a></li>
+                 <li class="mmenu"><a href="./pages/Partner/index.html">Partner</a></li>
+            <li  class="mmenu" style="float: right;margin-right:15px;"><img src="images/uk.png" style="width:30px;float:right;"/></li>
+              </ul>              
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  <i class="fas fa-align-justify"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Welcome</a>
+                  <a href="#">Protect</a>
+                  <a href="#">Promote</a>
+                  <a href="#">Integrate</a>
+                </div>
+              </div> 
+
+
+</div>
+<div>
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<div class="w3-container">
+  
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:100%;margin-top:30px;">
+<div class="typewriter message"><h3 class="" style="position:absolute;margin-left:10px;margin-top:28%;color:white;">We provide free English lessons to help our friends integrate into the St Helens community</h2></div>
+<div class="typewriter message"><h3 style="position:absolute;margin-left:10px;margin-top:28%;color:white;">Our welcome café is open to people of all nationalities and faiths</h2></div>
+<div class="typewriter message"><h3 style="position:absolute;margin-left:10px;margin-top:28%;color:white;">With the help of the British Red cross we provide casework support along with general advice about living in St Helens</h2></div>
+<div class="typewriter message"><h3 style="position:absolute;margin-left:10px;margin-top:28%;color:white;">Asylum seekers attending the welcome café are given a small food parcel to help with cost of getting there</h2></div>
+<div class="typewriter message"><h3 style="position:absolute;margin-left:10px;margin-top:28%;color:white;">We provide holiday activities for our friends children</h2></div>
+<img class="mySlides" src="images/photos/Rebeccateaching.jpg" style="width:100%;height:510px;object-fit: cover;object-position: 100% 0;">
+<img class="mySlides" src="images/photos/ladies in lesson.jpg" style="width:100%;height:510px;object-fit: cover;">
+  <img class="mySlides" src="images/photos/Men in class.jpg" style="width:100%;height:510px;object-fit: cover;object-position: 100% 0;">
+  <img class="mySlides" src="images/photos/Childrenplaying.jpg" style="width:100%;height:510px;object-fit: cover;object-position: 100% 0;">
+  <img class="mySlides" src="images/photos/Gordonstores.jpg" style="width:100%;height:510px;object-fit: cover;object-position: 100% 0;">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+	
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var x1 = document.getElementsByClassName("message");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    x1[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  x1[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  showDivs(slideIndex);
+  setTimeout(carousel, 3000); 
+}
+</script>
+</div>
+<div style="text-align:center">
+<h3>
+Despair is contagious, so is hope. Let's all become infected by hope and spread it to all we meet
+</h3>
+</div>
+<div style="padding:100px;">
+<p>
+Our warm welcome is a locally based charity that looks to welcome asylum seekers and refugees housed in St Helens by the Home Office. We provide support through our weekly drop in the Welcome Café. At the café our friends can access casework support from the British Red Cross, Health advice from the Parish nurse from St Andrews. Attend one of our free English classes. Mots of all they get time to sit and chat with people from St Helens and across the world. In addition to providing a warm welcome we look to protect our friends with the support of Merseyside police who regularly attend the café. Finally, we take every opportunity to bust some of the myths created by the media and help the people of St Helens understand the talents and gifts our friends offer to the local community. Everything we do is to help our friends integrate into the St Helens community so that together we can have a safer, brighter future.
+</p>
+</div>
+
+
+            <div class="aboutme">
+              <h4 style="font-size: 30px;margin-left:40%;color:black;position:absolute;">About me</h4>
+              <br>
+              <br>
+              <img src="images/profile.jpg" class="profile"/>
+              <div style="float:right;width:65%">
+              <p style="color:black;">I am Kevin Duffy in 2015 working with a small group of volunteers,
+               St Helens council and members of St Helens Faith forum we began to prepare for arrival of asylum seekers in St Helens.
+                In the spring of 2016 with the help of the YMCA, British Red Cross,
+                 SHAP and Refugee women connect we opened the doors of the welcome café for the first time.
+                  In the autumn of 2017, we registered Our warm welcome with the charity commission.
+                   This was in response to the greater understanding of the needs of our friends.
+                    As each month passes, we connect with new groups and individuals willing to help our work.
+                     If you feel you have something to offer us, please contact me personally.
+                     </p>
+              <p style="font-family: kevin;color:black;font-size: 8px;">Kevin Duffy</p>
+            </div>
+            </div>
+
+            <div style="margin-top: 150px">
+                <h3 style="margin-left: 40%">Contact Me</h3>
+              <div style="display:flex;overflow: hidden;">
+             
+              <div style="width:50%;padding:30px;"><h4>Address:</h4><p>STEM centre-St Helens Technology Campus,<br>St Helens, UK</p>
+              <h4>Contact:</h4><b>+44 7948 708629</b><br><b>kevin@ourwarmwelcome.co.uk</b></div>
+              <div style="width:50%;padding:30px;">
+							<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div></div>
+</div></div>
+</div></div>
+<hr>
+							<div style="text-align: center">
+							<h4>Quick Link</h4><p><i class="fab fa-facebook" style="font-size: 35px;margin:5px;"></i><i class="fab fa-google-plus-square" style="font-size: 35px;margin:5px;"></i><i class="fab fa-twitter-square" style="font-size: 35px;margin:5px;"></i></p>
+							</div>
+           
+    </body>
+</html>
