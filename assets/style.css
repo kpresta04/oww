@@ -5,6 +5,7 @@
 body {
 	background-color: #fff;
 	font-family: aargh;
+	color: black;
 }
 .dropdown {
 	float: right;
@@ -21,7 +22,12 @@ body {
 	width: 100%;
 	float: left;
 }
-
+p {
+	font-size: 18px;
+}
+.text-center {
+	text-align: center;
+}
 h2 {
 	float: left;
 	position: absolute;
@@ -151,19 +157,29 @@ a:hover {
 	background-color: rgba(33, 33, 33, 0.3);
 	align-items: center;
 }
-
+.flex {
+	display: flex !important;
+}
+.about-text h4 {
+	margin: 48px 0 24px;
+}
+.signature {
+	font-family: kevin;
+	font-size: 8px;
+	margin-top: 48px;
+}
 .aboutme {
-	padding: 30px;
 	width: 100%;
-	margin-top: 50px;
-	color: white;
 	background-color: #f2f2f2;
 }
-
+.contact-title {
+	margin-bottom: 48px;
+}
 .profile {
 	width: 200px;
 	height: 200px;
-	margin-left: 10%;
+	/* margin-left: 10%; */
+	margin: 0 auto;
 	border-radius: 50%;
 	border-color: white;
 	border-width: 2px;
@@ -190,6 +206,7 @@ input[type="submit"] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	margin-top: 24px;
 }
 
 input[type="submit"]:hover {
@@ -201,13 +218,25 @@ input[type="submit"]:hover {
 	background-color: #f2f2f2;
 	padding: 20px;
 }
-
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.container-half {
+	padding: 15px;
+	width: 100%;
+}
+.typewriter {
+	word-break: break-all;
+}
 .typewriter h3 {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: 0.15em solid white; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.15em; /* Adjust as needed */
+	word-break: break-word;
+
 	animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -229,5 +258,86 @@ input[type="submit"]:hover {
 	}
 	50% {
 		border-color: white;
+	}
+}
+
+.main {
+	min-height: 100vh;
+	margin-top: 88px;
+}
+.text-bold {
+	font-weight: bold;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+.wrapper {
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.section {
+	position: relative;
+	z-index: 1;
+	padding: 128px 48px;
+	background-color: #fff;
+}
+.side-paddings {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.text-white {
+	color: white;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	outline: none;
+}
+
+.input.text-area {
+	min-height: 200px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+	.section {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+	.main {
+		margin-top: 60px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.section {
+		padding: 80px 16px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container-half {
+		width: 50% !important;
 	}
 }
