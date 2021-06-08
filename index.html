@@ -67,10 +67,69 @@
 	
   </div>
 </div> -->
+<div class="section" style="padding-bottom: 0;">
 
+  <div class="slide fade-in" id="slide1">
+    <div class="overlay"></div>
+    
+    <h3 class="caption-text">
+      We provide free English lessons to help our friends integrate into the St Helens community
+    </h3>
+  </div>
+  <div class="slide" id="slide2" style="display: none;">
+    <div class="overlay"></div>
+    <h3 class="caption-text">
+      Our welcome café is open to people of all nationalities and faiths
+    </h3>
+  
+  
+  </div>
+  <div class="slide" id="slide3" style="display: none;">
+    <div class="overlay"></div>
+    <h3 class="caption-text">
+      With the help of the British Red cross we provide casework support along with general advice about living in St Helens
+    </h3>
+  </div>
+  <div class="slide" id="slide4" style="display: none;">
+    <div class="overlay"></div>
+    <h3 class="caption-text">
+      Asylum seekers attending the welcome café are given a small food parcel to help with cost of getting there
+    </h3>
+  </div>
+  <div class="slide" id="slide5" style="display: none;">
+    <div class="overlay"></div>
+    <h3 class="caption-text">
+      We provide holiday activities for our friends children
+    </h3>
+  </div>
+
+
+
+</div>
 <script>
-var slideIndex = 1;
+let slideIndex = 1;
 // showDivs(slideIndex);
+
+function showNext(){
+  console.log('shownext')
+
+  const slides = [...document.querySelectorAll('.slide')]
+  const currentSlide = document.querySelector(`#slide${slideIndex}`)
+  currentSlide.style.display = "none";
+  currentSlide.classList = "slide"
+ 
+
+  if (slideIndex + 1 > slides.length){
+    slideIndex = 1
+  } else{
+    slideIndex ++;
+  }
+
+  const nextSlide = document.querySelector(`#slide${slideIndex}`)
+  nextSlide.style.display = "block";
+  nextSlide.classList = "slide fade-in"
+
+}
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -99,7 +158,6 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-var slideIndex = 0;
 // carousel();
 
 function carousel() {
@@ -111,8 +169,8 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1} 
   showDivs(slideIndex);
-  // setTimeout(carousel, 8000); 
 }
+setInterval(showNext, 7000); 
 </script>
 </div>
 
